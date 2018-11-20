@@ -49,13 +49,13 @@
           "modifyvm",
           "{{.Name}}",
           "--memory",
-          "512"
+          "16300"
         ],
         [
           "modifyvm",
           "{{.Name}}",
           "--cpus",
-          "2"
+          "8"
         ]
       ]
     }
@@ -65,11 +65,6 @@
       {
         "output": "builds/{{.Provider}}-centos7.box",
         "type": "vagrant"
-      },
-      {
-        "type": "vagrant-cloud",
-        "box_tag": "geerlingguy/centos7",
-        "version": "{{user `version`}}"
       }
     ]
   ]
